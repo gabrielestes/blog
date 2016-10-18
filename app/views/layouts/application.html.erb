@@ -20,14 +20,15 @@ media: 'all', 'data-turbolinks-track': 'reload' %>
         <li class="category">Website</li>
         <li><%= link_to "Blog", root_path %></li>
         <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Books", books_path %></li>
       </ul>
 
       <ul>
         <li class="category">Social</li>
-        <li><a href="https://github.com/gabrielestes">GitHub</a></li>
-        <li><a href="https://twitter.com/gabrielestes27">Twitter</a></li>
-        <li><a href="https://www.linkedin.com/in/gabriel-estes-47a58151?trk=hp-identity-name">LinkedIn</a></li>
-        <li><a href="mailto:gabriel.estes@gmail.com">Email</a></li>
+        <li><a href="https://github.com/gabrielestes" target="_blank">GitHub</a></li>
+        <li><a href="https://twitter.com/gabrielestes27" target="_blank">Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/gabriel-estes-47a58151?trk=hp-identity-name" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:gabriel.estes@gmail.com" target="_blank">Email</a></li>
       </ul>
 
       <% if !user_signed_in? %>
@@ -41,6 +42,8 @@ media: 'all', 'data-turbolinks-track': 'reload' %>
           <p>All Posts</p>
         <% elsif current_page?(about_path) %>
           <p>About</p>
+        <% elsif current_page?(books_path) %>
+          <p>Books</p>
         <% else %>
           <%= link_to "Back to All Posts", root_path %>
         <% end %>
