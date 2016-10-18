@@ -29,7 +29,8 @@
 @import 'normalize';
 
 html, body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgb(252, 246, 229);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,15 +42,21 @@ a {
 	color: inherit;
 }
 
+p.body {
+	line-height: 2em;
+	font-weight: 300;
+
+}
+
 #sidebar {
 	width: 250px;
 	position: fixed;
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #f5f7f9;
+	background: rgb(13, 13, 13);
 	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
+	border-right: 1px;
 	#logo {
 		width: 40px;
 		position: absolute;
@@ -95,14 +102,14 @@ a {
 .button {
 	outline: none;
 	background: transparent;
-	border: 1px solid #d6dce0;
+	border: 1px solid rgb(12, 12, 12);
 	padding: .5em 1.5em;
-	border-radius: 1.5em;
+	border-radius: .2em;
 	&:hover {
 		border: 1px solid #33acb7;
-		color: #33acb7;
+		color: rgb(141, 159, 173);
 		a {
-			color: #33acb7 !important;
+			color: rgb(141, 159, 173) !important;
 		}
 	}
 }
@@ -119,18 +126,21 @@ a {
 	margin-left: 250px;
 	#header {
 		padding: 1em 3em;
-		border-bottom: 1px solid #d6dce0;
-		background: #f5f7f9;
-		color: #9eafba;
+		// position: fixed;
+		// width: 100%;
+		// border-bottom: 1px solid #d6dce0;
+		background: rgb(34, 144, 171);
+		color: rgb(12, 12, 12);
 		p {
 			display: inline;
 		}
 		a {
-			color: #9eafba;
+			color: rgb(12, 12, 12);
 			text-decoration: none;
 		}
 		.buttons {
 			float: right;
+			// margin-right: .5em;
 			margin-top: -6px;
 			.button {
 				font-size: .8em;
@@ -161,15 +171,15 @@ a {
 	#post_content {
 		padding: 1em 3em;
 		.title {
-			font-weight: 500;
+			font-weight: 300;
 			text-decoration: none;
 			color: #2a2f35;
 			font-size: 2.5em;
 			margin-bottom: 0;
 		}
 		.body {
-			font-size: 1.1em;
-			line-height: 1.75;
+			font-size: 2em;
+			line-height: 2.2;
 		}
 		.date_and_author {
 			color: #9eafba;
@@ -235,7 +245,7 @@ a {
 			}
 			p {
 				font-size: 1.1em;
-				line-height: 1.75;
+				line-height: 1.75em;
 			}
 			a {
 				color: #33acb7;
@@ -249,11 +259,12 @@ a {
 	}
 	input[type="text"], input[type="email"], input[type="password"], textarea {
 		width: 90%;
-		border: 1px solid #d6dce0;
+		border: 1px solid rgb(13, 13, 13);;
 		border-radius: .35em;
 		margin-top: 10px;
 		padding: .5em 1em;
 		line-height: 1.75;
+		background-color: rgb(252, 246, 229);
 	}
 	input[type="text"] {
 		height: 35px;
