@@ -29,8 +29,11 @@
 @import 'normalize';
 
 html, body {
-	font-family: 'Roboto', sans-serif;
-	background-color: rgb(252, 246, 229);
+	font-family: 'Josefin Sans', sans-serif;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	// background-color: rgb(252, 246, 229);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,8 +46,13 @@ a {
 }
 
 p.body {
+	color: rgb(46, 48, 63);
 	line-height: 2em;
 	font-weight: 300;
+	background-color: rgba(227, 235, 242, .7);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 3px;
+	padding: 10px;
 
 }
 
@@ -55,12 +63,13 @@ hr {
 #sidebar {
 	width: 250px;
 	position: fixed;
-	left: 0;
-	top: 0;
+	left: 20px;
+	top: 20px;
 	height: 100%;
-	background: rgb(13, 13, 13);
+	background: rgba(13, 13, 13, .7);
 	padding: 7em 0 0 0;
 	border-right: 1px;
+	border-radius: 10px;
 	#logo {
 		width: 40px;
 		position: absolute;
@@ -73,7 +82,7 @@ hr {
 		padding-right: 3em;
 		.category {
 			font-weight: 700;
-			font-size: 0.7em;
+			font-size: 1.25em;
 			text-transform: uppercase;
 			color: #33acb7;
 		}
@@ -133,8 +142,9 @@ hr {
 		// position: fixed;
 		// width: 100%;
 		// border-bottom: 1px solid #d6dce0;
-		background: rgb(34, 144, 171);
+		background: rgba(34, 144, 171, .7);
 		color: rgb(12, 12, 12);
+		border-bottom-left-radius: 5px;
 		p {
 			display: inline;
 		}
@@ -160,10 +170,12 @@ hr {
 			a {
 				font-weight: 500;
 				text-decoration: none;
-				color: #2a2f35;
+				color: rgb(46, 48, 63);
+				transition: .5s;
 				font-size: 1.5em;
 				&:hover {
 					color: #33acb7;
+					transition: .5s;
 				}
 			}
 		}
