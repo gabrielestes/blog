@@ -84,7 +84,7 @@ hr {
 			font-weight: 700;
 			font-size: 1.25em;
 			text-transform: uppercase;
-			color: #33acb7;
+			color: rgb(206, 192, 174);
 		}
 		li {
 			padding: .5em 0;
@@ -94,6 +94,8 @@ hr {
 				transition: all .4s ease;
 				&:hover {
 					color: #33acb7;
+					letter-spacing: 2px;
+					// text-transform: uppercase;
 				}
 			}
 		}
@@ -142,8 +144,9 @@ hr {
 		// position: fixed;
 		// width: 100%;
 		// border-bottom: 1px solid #d6dce0;
+		text-transform: uppercase;
 		background: rgba(34, 144, 171, .7);
-		color: rgb(12, 12, 12);
+		color: rgb(39, 39, 39);
 		border-bottom-left-radius: 5px;
 		p {
 			display: inline;
